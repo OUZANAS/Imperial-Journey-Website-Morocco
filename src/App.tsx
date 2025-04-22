@@ -18,7 +18,7 @@ const queryClient = new QueryClient();
 const AnimatedRoutes = () => {
   const location = useLocation();
   return (
-    <FadeTransition keyId={location.pathname}>
+    <FadeTransition keyId={location.pathname} duration={800} delay={50} className="min-h-screen">
       <Routes location={location}>
         <Route path="/" element={<Index />} />
         <Route path="/fes" element={<Fes />} />
