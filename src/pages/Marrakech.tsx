@@ -16,7 +16,19 @@ import {
   ChartLegend,
   ChartLegendContent,
 } from "@/components/ui/chart";
-import { PieChart, Pie, Cell, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, ResponsiveContainer } from "recharts";
+import { 
+  PieChart, 
+  Pie, 
+  Cell, 
+  RadarChart, 
+  PolarGrid, 
+  PolarAngleAxis, 
+  PolarRadiusAxis, 
+  Radar, 
+  ResponsiveContainer,
+  Tooltip as RechartsTooltip,
+  Legend as RechartsLegend
+} from "recharts";
 
 const COLORS = ["#EF4444", "#F59E0B", "#10B981", "#3B82F6"];
 
@@ -241,7 +253,7 @@ const Marrakech = () => {
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                   ))}
                 </Pie>
-                <Tooltip 
+                <RechartsTooltip 
                   content={({ payload }) => {
                     if (payload && payload.length) {
                       return (
@@ -487,7 +499,7 @@ const Marrakech = () => {
                     fill="#FBBF24"
                     fillOpacity={0.6}
                   />
-                  <Tooltip
+                  <RechartsTooltip
                     content={({ active, payload }) => {
                       if (active && payload && payload.length) {
                         return (
@@ -505,7 +517,7 @@ const Marrakech = () => {
                       return null;
                     }}
                   />
-                  <Legend 
+                  <RechartsLegend 
                     content={(props) => {
                       const { payload } = props;
                       return (
