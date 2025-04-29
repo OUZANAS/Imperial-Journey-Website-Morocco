@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
+import OptimizedImage from './OptimizedImage';
 
 interface AnimatedImageCardProps {
   imageUrl: string;
@@ -34,13 +35,14 @@ const AnimatedImageCard: React.FC<AnimatedImageCardProps> = ({
       onClick={onClick}
     >
       <div className="relative h-48 md:h-64 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-700"
-          style={{ 
-            backgroundImage: `url(${imageUrl})`,
-            transform: isHovered ? 'scale(1.1)' : 'scale(1)',
-          }}
-        />
+        <div className="absolute inset-0">
+          <OptimizedImage
+            src={imageUrl}
+            alt={title}
+            className={`w-full h-full transition-transform duration-700 ${isHovered ? 'scale-110' : 'scale-100'}`}
+            objectFit="cover"
+          />
+        </div>
         <div 
           className={cn(
             'absolute inset-0 transition-opacity duration-500',
