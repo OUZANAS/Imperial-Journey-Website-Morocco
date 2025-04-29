@@ -41,6 +41,7 @@ const AnimatedImageCard: React.FC<AnimatedImageCardProps> = ({
             alt={title}
             className={`w-full h-full transition-transform duration-700 ${isHovered ? 'scale-110' : 'scale-100'}`}
             objectFit="cover"
+            fallbackSrc="/placeholder.svg"
           />
         </div>
         <div 

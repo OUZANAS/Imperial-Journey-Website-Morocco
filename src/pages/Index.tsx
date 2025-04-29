@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -26,7 +25,7 @@ const citiesData = [
     name: "Fès",
     title: "La Cité du Savoir",
     description: "Explorez l'une des plus anciennes médinas du monde, découvrez l'artisanat traditionnel et plongez dans l'architecture fascinante de cette ville historique.",
-    image: "/placeholder.svg",
+    image: "/placeholder.svg", // Placeholder for Fes city image
     color: "green"
   },
   {
@@ -34,7 +33,7 @@ const citiesData = [
     name: "Meknès",
     title: "La Ville des Palais",
     description: "Visitez les portes monumentales, les écuries royales et les mausolées dans cette ville au riche patrimoine, connue pour ses influences andalouses et ses traditions orales.",
-    image: "/placeholder.svg",
+    image: "/placeholder.svg", // Placeholder for Meknes city image
     color: "ochre"
   },
   {
@@ -42,7 +41,7 @@ const citiesData = [
     name: "Rabat",
     title: "Capitale Moderne",
     description: "Découvrez comment cette capitale mêle patrimoine historique et modernité, explorez le cinéma marocain et admirez la calligraphie vivante de cette ville côtière.",
-    image: "/placeholder.svg",
+    image: "/placeholder.svg", // Placeholder for Rabat city image
     color: "blue"
   },
   {
@@ -50,7 +49,7 @@ const citiesData = [
     name: "Marrakech",
     title: "Vibrante et Artistique",
     description: "Immergez-vous dans l'animation de la place Jemaa el-Fna, découvrez la musique Gnaoua et admirez l'artisanat berbère dans cette ville aux couleurs vives.",
-    image: "/placeholder.svg",
+    image: "/placeholder.svg", // Placeholder for Marrakech city image
     color: "red"
   }
 ];
@@ -62,7 +61,7 @@ const themesData = [
     icon: "🎨",
     color: "bg-morocco-ochre/10",
     link: "/arts",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg" // Placeholder for Moroccan art image
   },
   {
     title: "Musique & Spectacles",
@@ -70,7 +69,7 @@ const themesData = [
     icon: "🎵",
     color: "bg-morocco-blue/10",
     link: "/music",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg" // Placeholder for Music & performances image
   },
   {
     title: "Cinéma Marocain",
@@ -78,7 +77,7 @@ const themesData = [
     icon: "🎬",
     color: "bg-morocco-red/10",
     link: "/cinema",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg" // Placeholder for Moroccan cinema image
   }
 ];
 
@@ -89,7 +88,7 @@ const testimonialData = [
     title: "Maître Artisan, Fès",
     initials: "MA",
     color: "bg-morocco-green/20",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg" // Placeholder for Mohammed Aziz image
   },
   {
     quote: "La musique gnaoua est bien plus qu'un simple art. C'est une thérapie spirituelle qui relie l'âme au corps à travers des rythmes ancestraux.",
@@ -97,7 +96,7 @@ const testimonialData = [
     title: "Musicien Gnaoua, Marrakech",
     initials: "HB",
     color: "bg-morocco-blue/20",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg" // Placeholder for Hassan Boussou image
   },
   {
     quote: "Le cinéma marocain est un miroir de notre société, capturant l'essence de notre identité à travers des histoires qui transcendent les frontières culturelles.",
@@ -105,7 +104,7 @@ const testimonialData = [
     title: "Réalisatrice, Rabat",
     initials: "LM",
     color: "bg-morocco-red/20",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg" // Placeholder for Leila Marrakchi image
   }
 ];
 
