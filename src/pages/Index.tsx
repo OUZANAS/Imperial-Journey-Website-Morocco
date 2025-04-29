@@ -25,7 +25,7 @@ const citiesData = [
     name: "Fès",
     title: "La Cité du Savoir",
     description: "Explorez l'une des plus anciennes médinas du monde, découvrez l'artisanat traditionnel et plongez dans l'architecture fascinante de cette ville historique.",
-    image: "/placeholder.svg", // Placeholder for Fes city image
+    image: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80", // Fes medina
     color: "green"
   },
   {
@@ -33,7 +33,7 @@ const citiesData = [
     name: "Meknès",
     title: "La Ville des Palais",
     description: "Visitez les portes monumentales, les écuries royales et les mausolées dans cette ville au riche patrimoine, connue pour ses influences andalouses et ses traditions orales.",
-    image: "/placeholder.svg", // Placeholder for Meknes city image
+    image: "https://images.unsplash.com/photo-1565689478170-7c200255c7df?auto=format&fit=crop&w=800&q=80", // Meknes palace gate
     color: "ochre"
   },
   {
@@ -41,7 +41,7 @@ const citiesData = [
     name: "Rabat",
     title: "Capitale Moderne",
     description: "Découvrez comment cette capitale mêle patrimoine historique et modernité, explorez le cinéma marocain et admirez la calligraphie vivante de cette ville côtière.",
-    image: "/placeholder.svg", // Placeholder for Rabat city image
+    image: "https://images.unsplash.com/photo-1577443170247-5a47bed5a6fe?auto=format&fit=crop&w=800&q=80", // Rabat coastline
     color: "blue"
   },
   {
@@ -49,7 +49,7 @@ const citiesData = [
     name: "Marrakech",
     title: "Vibrante et Artistique",
     description: "Immergez-vous dans l'animation de la place Jemaa el-Fna, découvrez la musique Gnaoua et admirez l'artisanat berbère dans cette ville aux couleurs vives.",
-    image: "/placeholder.svg", // Placeholder for Marrakech city image
+    image: "https://images.unsplash.com/photo-1539020140153-e8c7a7024ad2?auto=format&fit=crop&w=800&q=80", // Marrakech marketplace
     color: "red"
   }
 ];
@@ -61,7 +61,7 @@ const themesData = [
     icon: "🎨",
     color: "bg-morocco-ochre/10",
     link: "/arts",
-    image: "/placeholder.svg" // Placeholder for Moroccan art image
+    image: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=800&q=80" // Moroccan art
   },
   {
     title: "Musique & Spectacles",
@@ -69,7 +69,7 @@ const themesData = [
     icon: "🎵",
     color: "bg-morocco-blue/10",
     link: "/music",
-    image: "/placeholder.svg" // Placeholder for Music & performances image
+    image: "https://images.unsplash.com/photo-1531761535209-180857b2bb45?auto=format&fit=crop&w=800&q=80" // Music performance
   },
   {
     title: "Cinéma Marocain",
@@ -77,7 +77,7 @@ const themesData = [
     icon: "🎬",
     color: "bg-morocco-red/10",
     link: "/cinema",
-    image: "/placeholder.svg" // Placeholder for Moroccan cinema image
+    image: "https://images.unsplash.com/photo-1557072175-1e29538de9cf?auto=format&fit=crop&w=800&q=80" // Moroccan cinema atmosphere
   }
 ];
 
@@ -88,7 +88,7 @@ const testimonialData = [
     title: "Maître Artisan, Fès",
     initials: "MA",
     color: "bg-morocco-green/20",
-    image: "/placeholder.svg" // Placeholder for Mohammed Aziz image
+    image: "https://images.unsplash.com/photo-1552642986-ccb41e7059e7?auto=format&fit=crop&w=800&q=80" // Moroccan artisan
   },
   {
     quote: "La musique gnaoua est bien plus qu'un simple art. C'est une thérapie spirituelle qui relie l'âme au corps à travers des rythmes ancestraux.",
@@ -96,7 +96,7 @@ const testimonialData = [
     title: "Musicien Gnaoua, Marrakech",
     initials: "HB",
     color: "bg-morocco-blue/20",
-    image: "/placeholder.svg" // Placeholder for Hassan Boussou image
+    image: "https://images.unsplash.com/photo-1551651767-d5ffbdd04b83?auto=format&fit=crop&w=800&q=80" // Musician portrait
   },
   {
     quote: "Le cinéma marocain est un miroir de notre société, capturant l'essence de notre identité à travers des histoires qui transcendent les frontières culturelles.",
@@ -104,7 +104,7 @@ const testimonialData = [
     title: "Réalisatrice, Rabat",
     initials: "LM",
     color: "bg-morocco-red/20",
-    image: "/placeholder.svg" // Placeholder for Leila Marrakchi image
+    image: "https://images.unsplash.com/photo-1536337005238-94b997371b40?auto=format&fit=crop&w=800&q=80" // Filmmaker portrait
   }
 ];
 
@@ -137,7 +137,7 @@ const Index = () => {
       <AnimatedHero
         title="Circuit Impérial – Explore Morocco's Living Heritage"
         subtitle="Un voyage interactif à travers les villes impériales du Maroc : Fès, Meknès, Rabat et Marrakech."
-        backgroundImage="/placeholder.svg"
+        backgroundImage="https://images.unsplash.com/photo-1489493887464-892be6d1daae?auto=format&fit=crop&w=1920&q=80"
         buttonText="Commencer le Voyage"
         buttonLink="/fes"
         height="large"
@@ -195,7 +195,7 @@ const Index = () => {
               </div>
               <div className="relative h-full min-h-[400px]">
                 <OptimizedImage 
-                  src="/placeholder.svg" 
+                  src="https://images.unsplash.com/photo-1557072175-1e29538de9cf?auto=format&fit=crop&w=800&q=80"
                   alt="Guide interactif"
                   className="absolute inset-0 w-full h-full"
                 />
